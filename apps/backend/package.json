@@ -3,9 +3,6 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
-  "scripts": {
-    "start": "bun index.ts"
-  },
   "devDependencies": {
     "db": "*",
     "@types/bun": "latest"
