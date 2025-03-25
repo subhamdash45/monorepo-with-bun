@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: docker/Dockerfile.backend
     ports:
-      - "8080:8080"
+      - "8085:8085"
     environment:
       - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/postgres
     depends_on:
@@ -28,7 +28,7 @@ services:
       context: .
       dockerfile: docker/Dockerfile.ws
     ports:
-      - "8081:8081"
+      - "8086:8086"
     environment:
       - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/postgres
     depends_on:

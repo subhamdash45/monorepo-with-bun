@@ -11,6 +11,6 @@ COPY ./apps/backend ./apps/backend
 RUN bun install
 RUN bun run db:generate
 
-EXPOSE 8080
+EXPOSE 8085
 
 CMD ["bun", "run", "start:backend"]
